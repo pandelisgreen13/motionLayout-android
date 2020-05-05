@@ -12,10 +12,9 @@
         <KeyFrameSet>
 
             <KeyAttribute
-                android:scaleX="1.2"
-                android:scaleY="1.2"
-                motion:framePosition="90"
-                motion:motionTarget="@id/cardView" />
+                android:visibility="invisible"
+                motion:framePosition="15"
+                motion:motionTarget="@id/textviewCard" />
 
         </KeyFrameSet>
 
@@ -29,7 +28,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 motion:layout_constraintBottom_toBottomOf="@+id/cardView"
-                motion:layout_constraintEnd_toEndOf="@+id/cardView"
+                motion:layout_constraintEnd_toStartOf="@+id/image"
                 motion:layout_constraintStart_toStartOf="@+id/cardView"
                 motion:layout_constraintTop_toTopOf="@+id/cardView" />
             <Transform android:elevation="30dp" />
@@ -41,7 +40,7 @@
             android:layout_height="40dp"
             android:elevation="30dp"
             motion:layout_constraintBottom_toBottomOf="@+id/cardView"
-            motion:layout_constraintStart_toEndOf="@+id/textviewCard"
+            motion:layout_constraintEnd_toEndOf="@+id/cardView"
             motion:layout_constraintTop_toTopOf="@+id/cardView" />
 
         <Constraint
@@ -63,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:elevation="30dp"
-            android:visibility="gone"
+            android:visibility="invisible"
             motion:layout_constraintBottom_toBottomOf="@+id/cardView"
             motion:layout_constraintEnd_toEndOf="@+id/cardView"
             motion:layout_constraintStart_toStartOf="@+id/cardView"
@@ -71,18 +70,18 @@
 
         <Constraint
             android:id="@id/image"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:elevation="30dp"
             motion:layout_constraintBottom_toBottomOf="@+id/cardView"
             motion:layout_constraintEnd_toEndOf="@+id/cardView"
-            motion:layout_constraintStart_toEndOf="@+id/textviewCard"
+            motion:layout_constraintStart_toStartOf="@+id/cardView"
             motion:layout_constraintTop_toTopOf="@+id/cardView" />
 
         <Constraint
             android:id="@id/cardView"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintTop_toTopOf="parent" />
