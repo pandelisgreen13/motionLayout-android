@@ -11,7 +11,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button.setOnClickListener {
-            startActivity(Intent(this@MainActivity, SwipeActivity::class.java))
+            startIntent(SwipeActivity::class.java)
         }
+
+        button2.setOnClickListener {
+            startIntent(TextViewActivity::class.java)
+        }
+    }
+
+    private fun startIntent(java: Class<*>) {
+        startActivity(Intent(this@MainActivity, java))
     }
 }
