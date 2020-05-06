@@ -7,7 +7,7 @@
     android:background="@android:color/holo_blue_dark"
     app:layoutDescription="@xml/activity_swipe_scene"
     app:showPaths="true"
-    tools:context=".SwipeActivity">
+    tools:context=".activity.SwipeActivity">
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

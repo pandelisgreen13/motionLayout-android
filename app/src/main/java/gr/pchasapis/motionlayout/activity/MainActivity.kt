@@ -1,8 +1,9 @@
-package gr.pchasapis.motionlayout
+package gr.pchasapis.motionlayout.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import gr.pchasapis.motionlayout.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -17,9 +18,12 @@ class MainActivity : AppCompatActivity() {
         button2.setOnClickListener {
             startIntent(TextViewActivity::class.java)
         }
+        button3.setOnClickListener {
+            startIntent(FragmentActivity::class.java)
+        }
     }
 
-    private fun startIntent(java: Class<*>) {
-        startActivity(Intent(this@MainActivity, java))
+    private fun startIntent(activityClass: Class<*>) {
+        startActivity(Intent(this@MainActivity, activityClass))
     }
 }
