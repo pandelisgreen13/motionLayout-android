@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.FragmentActivity"></activity>
+        <activity android:name=".activity.ViberActivity"></activity>
+        <activity android:name=".activity.FragmentActivity" />
         <activity android:name=".activity.SwipeActivity" />
         <activity android:name=".activity.TextViewActivity" />
         <activity android:name=".activity.MainActivity">

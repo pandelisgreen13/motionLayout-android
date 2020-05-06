@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity() {
         button3.setOnClickListener {
             startIntent(FragmentActivity::class.java)
         }
+        button4.setOnClickListener {
+            startIntent(ViberActivity::class.java)
+        }
     }
 
     private fun startIntent(activityClass: Class<*>) {
